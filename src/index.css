@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+h1, h2{
+        color: #23272F;
+}
+h1{
+        font-family: 'Roboto', sans-serif;
+        font-weight: 500;
+        font-size: 2.5rem;
+        line-height: 1.2;      
+        margin: 0.5rem 0;
+}
+h2{
+        font-family: sans-serif;
+        font-weight: bold;
+}
+body {
+        font-family: sans-serif;
+        color: #30343B
+}
+.hr{
+        border: 0;
+        height: 1px;
+        background: #d2d2d3;
+        margin: 0.75rem 0;
+        display: block;
+}
