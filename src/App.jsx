@@ -25,7 +25,10 @@ export default function App() {
     <ScreenManager currentScreen={currentScreen}>
       <Screen screenName={Screens.Home}>
         <DivContainer title="4 in a row - the game">
-          <h2>Options: </h2>
+          <p className="mb-5 text-sm leading-relaxed text-slate-600">
+            Drop chips, block your rival, and connect four before they do.
+          </p>
+          <h2 className="mb-2 text-lg font-semibold text-slate-800">Game Mode</h2>
           <span className="hr"></span>
           <RadioGroup
             legend="Game Mode"
@@ -47,12 +50,12 @@ export default function App() {
                                 <RadioOption id={Game_Mode.MULTI_PLAYER} value={"🌐 Multi-Player Mode"} />
                                 */}
           </RadioGroup>
-          <footer className="mt-5">
+          <footer className="mt-6 flex justify-end">
             <Button handleClick={() => {
               console.log(gameMode);
               setCurrentScreen(gameMode)}
             }>
-              ▶️ Start Game
+              ▶ Start Game
             </Button>
           </footer>
         </DivContainer>

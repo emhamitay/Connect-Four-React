@@ -1,9 +1,9 @@
 export default function DivContainer({ title, children }) {
   return (
-    <div className="flex flex-col items-center w-screen">
-      <div className="bg-gray-100 m-10 p-5 rounded-lg shadow-md border-gray-300 border-2 w-96">
+    <div className="flex min-h-screen w-full items-center justify-center px-4 py-8 sm:px-6">
+      <div className="w-full max-w-lg rounded-3xl border border-blue-200/70 bg-white/75 p-6 shadow-[0_22px_60px_rgba(36,72,135,0.18)] backdrop-blur sm:p-8">
         <header className="inline-block w-full">
-          <h1 className="text-3xl font-bold">{title}</h1>
+          {title && <h1 className="text-3xl font-bold leading-tight sm:text-4xl">{title}</h1>}
           <span className="hr"></span>
         </header>
         {children}

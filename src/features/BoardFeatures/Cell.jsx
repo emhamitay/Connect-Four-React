@@ -20,12 +20,12 @@ export default function Cell({row, cell, color
     
     //CSS COLOR
     const colorcss = {
-        none : 'bg-gray-700',
-        noneHover : 'bg-gray-500',
-        blue : 'bg-blue-500',
-        blueHover : 'bg-blue-300',
-        red : 'bg-red-500',
-        redHover : 'bg-red-300'
+        none : 'bg-slate-300/70 border-slate-400/80',
+        noneHover : 'bg-slate-200 border-slate-300',
+        blue : 'bg-blue-500 border-blue-300 shadow-[inset_0_7px_12px_rgba(255,255,255,0.45)]',
+        blueHover : 'bg-blue-400 border-blue-200 shadow-[inset_0_7px_12px_rgba(255,255,255,0.5)]',
+        red : 'bg-red-500 border-red-300 shadow-[inset_0_7px_12px_rgba(255,255,255,0.45)]',
+        redHover : 'bg-red-400 border-red-200 shadow-[inset_0_7px_12px_rgba(255,255,255,0.5)]'
     }
 
     //add color to css
@@ -39,9 +39,9 @@ export default function Cell({row, cell, color
                 onMouseLeave={() => handleUnHover(cell)}
                 onClick={() => handleClick(cell)}
                 className={clsx(
-                    "text-white rounded-full border-2 border-gray-500 px-5 py-5", //default css
+                    "h-10 w-10 rounded-full border-2 transition-colors sm:h-12 sm:w-12", //default css
                     colorcss[effectiveColor], //add matching bg-color (depends on the current color[empty cell, red cell or blue] and if hovered)
-                    { 'cursor-default' : status === Status.FINISHED }
+                    { 'cursor-default' : status === Status.FINISHED, 'cursor-pointer' : status !== Status.FINISHED }
                 )}
                 >
             </button>

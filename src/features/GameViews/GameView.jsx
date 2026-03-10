@@ -24,27 +24,28 @@ export default function GameView({
 
   return (
     <EventProviderContext.Provider value={eventProvider}>
-      <div className="w-screen h-screen flex justify-center items-start pt-10">
-        {/* קונטיינר שמחזיק את כל המשחק באותו רוחב */}
-        <div className="flex flex-col items-start gap-6">
-          {/* כותרת */}
+      <div className="min-h-screen w-full px-4 py-8 sm:px-8">
+        <div className="mx-auto flex w-full max-w-4xl flex-col gap-6 rounded-3xl border border-blue-200/80 bg-white/70 p-5 shadow-[0_28px_70px_rgba(31,74,153,0.2)] backdrop-blur sm:p-8">
           <div className="inline-block">
-            <h1 className="text-4xl font-bold text-gray-800">
-              4 In a Line - The Game
+            <h1 className="text-3xl font-bold leading-tight sm:text-4xl">
+              Connect Four Arena
             </h1>
-            <div className="h-[1px] bg-gray-300 mt-1"></div>
+            <p className="mt-2 text-sm text-slate-600">
+              First to align four chips vertically, horizontally, or diagonally wins.
+            </p>
+            <div className="mt-3 h-[1px] bg-gradient-to-r from-transparent via-blue-200 to-transparent"></div>
           </div>
 
-          {/* לוח המשחק */}
-          <div className="flex flex-col gap-2">
+          <div className="mx-auto w-fit max-w-full rounded-3xl border border-blue-300/60 bg-gradient-to-b from-blue-100/70 via-blue-200/60 to-blue-300/70 p-3 shadow-inner sm:p-4">
+            <div className="flex w-fit flex-col gap-2 rounded-2xl border border-blue-400/35 bg-blue-950/35 p-2.5 sm:p-3">
             {gameLogic.board.rows.map((row) => (
               <Row key={row.id} row={row} />
             ))}
+            </div>
           </div>
 
-          {/* כפתורים / מידע */}
-          <div className="mt-2 flex gap-4">
-            <Button handleClick={handleBackToMenuClick}> 🔙 Back </Button>
+          <div className="mt-1 flex flex-wrap items-center gap-3">
+            <Button handleClick={handleBackToMenuClick}>Back</Button>
             <Button handleClick={restart}> Restart </Button>
             <StatusBar
               currentPlayer={gameLogic.currentPlayer}

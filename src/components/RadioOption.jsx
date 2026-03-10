@@ -52,17 +52,17 @@ export default function RadioOption({ id, value, rightValue = '' }) {
                 // - flex layout and spacing
                 // - border and background color based on selection
                 className={
-                    "cursor-pointer flex items-center justify-between gap-4 rounded border p-3 text-sm font-medium shadow-sm transition-colors hover:bg-gray-50 " +
+                    "group cursor-pointer flex items-center justify-between gap-4 rounded-2xl border px-4 py-3.5 text-sm font-semibold shadow-[0_8px_22px_rgba(31,74,153,0.08)] transition-all duration-200 hover:-translate-y-0.5 " +
                     (currentValue === id
-                        ? "border-blue-600 ring-1 ring-blue-600 bg-blue-50"
-                        : "border-gray-300 bg-white")
+                        ? "border-blue-600 ring-2 ring-blue-300/60 bg-gradient-to-r from-blue-50 to-white"
+                        : "border-blue-100/90 bg-white hover:border-blue-200 hover:bg-blue-50/40")
                 }
             >
                 {/* Left label (main value) */}
-                <p className="text-gray-700">{value}</p>
+                <p className="text-slate-700">{value}</p>
 
                 {/* Optional right-side value (e.g., icon or score) */}
-                <p className="text-gray-900">{rightValue}</p>
+                <p className="text-slate-900">{rightValue}</p>
 
                 {/* The actual hidden radio input */}
                 <input

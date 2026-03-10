@@ -14,7 +14,7 @@
     
     return (
         <>
-            <p className="text-gray-600 self-center">
+            <p className="self-center rounded-full border border-blue-200 bg-white/80 px-4 py-2 text-sm font-medium text-slate-700 shadow-sm">
                 {status === 'playing' && colorText + "'s Turn"}
                 {status === 'finished' && colorText + " is the Winner"}
             </p>

@@ -1,28 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700&family=Space+Grotesk:wght@500;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-h1, h2{
-        color: #23272F;
+
+:root {
+        --bg-0: #f4f8ff;
+        --bg-1: #dce9ff;
+        --ink-strong: #1a2942;
+        --ink-soft: #45556f;
+        --panel: rgba(255, 255, 255, 0.8);
+        --line: #c5d2e8;
+        --primary: #2a63c9;
+        --primary-deep: #1f4a99;
+        --accent: #e94a47;
+        --blue-chip: #2f76ff;
+        --red-chip: #ef4e4a;
+        --empty-chip: #3f5b85;
 }
-h1{
-        font-family: 'Roboto', sans-serif;
-        font-weight: 500;
-        font-size: 2.5rem;
-        line-height: 1.2;      
-        margin: 0.5rem 0;
+
+* {
+        box-sizing: border-box;
 }
-h2{
-        font-family: sans-serif;
-        font-weight: bold;
+
+html,
+body,
+#root {
+        min-height: 100%;
 }
+
 body {
-        font-family: sans-serif;
-        color: #30343B
+        margin: 0;
+        font-family: 'Sora', sans-serif;
+        color: var(--ink-soft);
+        background:
+                radial-gradient(700px 350px at 10% -10%, #ffffff 0%, transparent 70%),
+                radial-gradient(850px 420px at 100% 0%, #bdd2ff 0%, transparent 65%),
+                linear-gradient(165deg, var(--bg-0) 0%, var(--bg-1) 100%);
 }
-.hr{
+
+h1,
+h2,
+h3 {
+        margin: 0;
+        color: var(--ink-strong);
+        font-family: 'Space Grotesk', sans-serif;
+}
+
+.hr {
         border: 0;
         height: 1px;
-        background: #d2d2d3;
-        margin: 0.75rem 0;
+        background: linear-gradient(to right, transparent, var(--line), transparent);
+        margin: 0.9rem 0 1.1rem;
         display: block;
+}
+
+.screen {
+        width: 100%;
 }
