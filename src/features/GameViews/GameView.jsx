@@ -37,7 +37,7 @@ export default function GameView({
         <div className="mx-auto flex w-full max-w-4xl flex-col gap-6 rounded-3xl border border-blue-200/80 bg-white/70 p-5 shadow-[0_28px_70px_rgba(31,74,153,0.2)] backdrop-blur sm:p-8">
           <div className="inline-block">
             <h1 className="text-3xl font-bold leading-tight sm:text-4xl">
-              Connect Four Arena
+              Connect Four
             </h1>
             <p className="mt-2 text-sm text-slate-600">
               First to align four chips vertically, horizontally, or diagonally wins.

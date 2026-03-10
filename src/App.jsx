@@ -24,7 +24,7 @@ export default function App() {
   return (
     <ScreenManager currentScreen={currentScreen}>
       <Screen screenName={Screens.Home}>
-        <DivContainer title="4 in a row - the game">
+        <DivContainer title="Connect Four">
           <p className="mb-5 text-sm leading-relaxed text-slate-600">
             Drop chips, block your rival, and connect four before they do.
           </p>
