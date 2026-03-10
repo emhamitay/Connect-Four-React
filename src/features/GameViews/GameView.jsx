@@ -2,6 +2,8 @@ import Row from "@/features/BoardFeatures/Row.jsx"
 import Button from "@/components/Button.jsx";
 import { EventProviderContext } from "@/context/EventHandlerContext.js";
 import StatusBar from "@/features/UI/StatusBar.jsx";
+import WinModal from "@/features/UI/WinModal.jsx";
+import Status from "@/model/status.js";
 
 export default function GameView({
   gameLogic,
@@ -24,6 +26,13 @@ export default function GameView({
 
   return (
     <EventProviderContext.Provider value={eventProvider}>
+      {gameLogic.status === Status.FINISHED && gameLogic.winner && (
+        <WinModal
+          winner={gameLogic.winner}
+          onRestart={restart}
+          onBackToMenu={handleBackToMenuClick}
+        />
+      )}
       <div className="min-h-screen w-full px-4 py-8 sm:px-8">
         <div className="mx-auto flex w-full max-w-4xl flex-col gap-6 rounded-3xl border border-blue-200/80 bg-white/70 p-5 shadow-[0_28px_70px_rgba(31,74,153,0.2)] backdrop-blur sm:p-8">
           <div className="inline-block">
