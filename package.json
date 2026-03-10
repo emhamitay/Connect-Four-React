@@ -1,8 +1,12 @@
 {
-  "name": "react-tailwind-app",
+  "name": "connect-four-react",
   "version": "0.0.0",
   "type": "module",
   "private": true,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/emhamitay/Connect-Four-React.git"
+  },
   "proxy": "http://localhost:5000",
   "scripts": {
     "dev": "vite",
