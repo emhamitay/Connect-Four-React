@@ -22,7 +22,6 @@ A fully featured **Connect Four** game built with **React 18**, powered by a cus
 - **Minimax AI with Alpha-Beta Pruning** — depth-7 search with heuristic board evaluation (centre preference, threat scoring, window analysis)
 - **Column hover animations** — chips preview where they'll land before you drop
 - **Win detection** — real-time check across all four directions (horizontal, vertical, both diagonals)
-- **Game history & save** — save completed games with player name to a backend API
 - **Clean, responsive UI** — built with Tailwind CSS, works on desktop and mobile
 - **State management with Valtio** — reactive proxy-based state, no Redux boilerplate
 
