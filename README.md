@@ -6,6 +6,14 @@ A fully featured **Connect Four** game built with **React 18**, powered by a cus
 
 ---
 
+## Preview
+
+| Home | Gameplay | Winner |
+|:---:|:---:|:---:|
+| ![Home](screenshots/home.png) | ![Gameplay](screenshots/gameplay.png) | ![Winner](screenshots/winner.png) |
+
+---
+
 ## Features
 
 - **Two Game Modes**
