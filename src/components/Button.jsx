@@ -1,3 +1,4 @@
+// בס"ד
 import { Children } from "react";
 
 export default function Button({children, handleClick=()=>{console.log("Button.jsx didn't get handleClick function")}}){

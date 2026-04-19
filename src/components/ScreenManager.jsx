@@ -1,3 +1,4 @@
+// בס"ד
 /**
  * 📘 Screen & ScreenManager Components (Combined File)
  *

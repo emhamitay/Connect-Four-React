@@ -1,3 +1,4 @@
+// בס"ד
 export default function Alert({ title, children, noClose = false }) {
   return (
     <div

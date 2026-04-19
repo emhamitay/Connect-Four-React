@@ -1,3 +1,4 @@
+// בס"ד
 /**
  * 📘 RadioGroup Component
  * 
@@ -9,7 +10,7 @@
  * 
  * ✅ Features:
  * - Accessible: uses <fieldset> and <legend>
- * - Context-powered: children don’t need to manually receive props
+ * - Context-powered: children don't need to manually receive props
  * - Easy to customize and scale
  * 
  * 🛠 Usage Example:
