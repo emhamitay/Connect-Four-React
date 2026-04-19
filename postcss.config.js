@@ -1,3 +1,4 @@
+// בס"ד
 export default {
   plugins: {
     tailwindcss: {},

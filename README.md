@@ -1,3 +1,4 @@
+<!-- בס"ד -->
 # Connect Four — React
 
 A fully featured **Connect Four** game built with **React 18**, powered by a custom **Minimax AI** with alpha-beta pruning. Play against a friend locally or challenge the computer.

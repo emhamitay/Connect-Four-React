@@ -1,3 +1,4 @@
+// בס"ד
 // App.js
 import { ScreenManager, Screen } from "@/components/ScreenManager.jsx";
 import Button from "@/components/Button";
